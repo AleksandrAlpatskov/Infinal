@@ -1,0 +1,14 @@
+	/**
+	 * Device Library
+	 * =====================
+	 *
+	 *
+	 * @author      Author: Aleksandr Alpatskov <a.alpatskov@infinal.de>
+	 *
+	 * @license     Code and contributions have 'MIT License'
+	 *              More details: https://infinal.de/LICENSE.txt
+	 *
+	 * @link        Homepage:     https://infinal.de
+	 *
+	 * @version     1.0.0.0
+	 */	

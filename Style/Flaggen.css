@@ -1,0 +1,19 @@
+﻿.germany {
+    width: 15px;
+    height: 12px;
+    background: #f00;
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #fc0;
+}
+
+.britain {
+
+}
+
+.russia {
+    width: 15px;
+    height: 12px;
+    background: #0300ff;
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #f00;
+}

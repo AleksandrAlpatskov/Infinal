@@ -1,0 +1,21 @@
+
+# Keine  URL based exploits zulassen
+RedirectMatch 403 \[
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	# Double slashes in allen URLs verbieten
+	RewriteCond %{THE_REQUEST} ^[A-Z]+\ /(([^/\ ]+/)*)/+([^\ ]*)
+	RewriteRule ^ /%1%3 [L,R=301]
+</IfModule>
+
+#<IfModule mod_rewrite.c>
+#	RewriteEngine On
+#	RewriteCond %{SERVER_PORT} !^443$
+#	RewriteRule (.*) https://%{HTTP_HOST}/$1 [L]
+#</IfModule>
+
+<FilesMatch "\.png">
+	Order allow,deny
+	deny from all
+</FilesMatch>
