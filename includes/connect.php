@@ -1,8 +1,8 @@
 <?php
 	$mysqlhost	= "localhost";
-	$mysqluser	= "infinal-online";
+	$mysqluser	= "infinal";
 	$mysqlpwd 	= "9moi.tuM3Urc";
-	$mysqldb	= "infinal-online";
+	$mysqldb	= "infinal";
 
 	try{
 		$con = new PDO("mysql:host={$mysqlhost};dbname={$mysqldb}",$mysqluser,$mysqlpwd);
