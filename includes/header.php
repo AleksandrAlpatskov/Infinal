@@ -2,7 +2,7 @@
 	include('connect.php');
 	require_once('session.php');
 	
-	$companyName = "Infinal-Online";
+	$companyName = "Infinal";
 	if(isset($_POST['Login'])){
 		$uname = $_POST['loginuser'];
 		$umail = $_POST['loginuser'];
@@ -43,14 +43,14 @@
 <meta charset="utf-8">
 <link rel="shortcut icon" href="/favicon.png">
 <title><?php echo TITLE; ?></title>
-<link href="http://infinal-online.de/assets/reset.css" rel="stylesheet">
-<link href="http://infinal-online.de/assets/main.css" rel="stylesheet">
-<link href="http://infinal-online.de/assets/font-awesome.min.css" rel="stylesheet">
-<script type="text/javascript" src="http://infinal-online.de/js/jquery.min.js"></script>
+<link href="http://infinal.de/assets/reset.css" rel="stylesheet">
+<link href="http://infinal.de/assets/main.css" rel="stylesheet">
+<link href="http://infinal.de/assets/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="http://infinal.de/js/jquery.min.js"></script>
 <script>
 	var updateDiv = function ()
 	{
-	  $('#news').load('http://infinal-online.de/includes/news.php', function () {
+	  $('#news').load('http://infinal.de/includes/news.php', function () {
 		deinTimer = window.setTimeout(updateDiv, 10000);
 	  });
 	}
@@ -58,7 +58,7 @@
 	
     var serverUpdate = function ()
 	{
-	  $('#server').load('http://infinal-online.de/includes/server.php', function () {
+	  $('#server').load('http://infinal.de/includes/server.php', function () {
 		serverTimer = window.setTimeout(serverUpdate, 10000);
 	  });
 	}
@@ -113,14 +113,14 @@
 	<div class="wrapper">
     	<?php 
 			if(isset($_SESSION['username'])){
-    			echo "<a href='http://infinal-online.de/includes/logout.php' class='logout_btn'>Not ".$_SESSION['username']."?</a>";	
+    			echo "<a href='http://infinal.de/includes/logout.php' class='logout_btn'>Not ".$_SESSION['username']."?</a>";	
 			}
 			else {
 				echo "<a class='login_btn' href='javascript:void(0);' onclick='Login()'>Login</a>";	
 			}
 			
 		?>
-    	<div class="banner"><h1>INFINAL - ONLINE Community</h1></div>
+    	<div class="banner"><h1>INFINAL Community</h1></div>
     <nav class="nav" id="nav"><?php include("nav.php"); ?></nav>
     <?php echo $_SESSION['username']; ?>
         <main class="content">
